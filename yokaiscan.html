@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOKAI SCAN</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Link para o CSS -->
+</head>
+<body>     <!--TOPP DO SITE-->
+    <header class="top-bar">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="logo">𝖄𝖔𝖐𝖆𝖎𝕾𝖈𝖆𝖓</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar...">
+             <button class="search-icon">
+               <i class="fas fa-search"></i> <!-- Ícone de lupa do Font Awesome -->
+             </button>
+            <button class="filter-btn" onclick="toggleFilter()">F̷i̷l̷t̷r̷a̷r̷</button> <!-- Corrigido -->
+        </div>
+    </header> 
+
+    <!--THIN BAR-->
+   <header class="thin-bar">
+   <button class= "category-btn">Lᴀɴᴄ̧ᴀᴍᴇɴᴛᴏs</button>
+   <button class="category-btn">Rᴏᴍᴀɴᴄᴇ</button>
+   <button class="category-btn">Dʀᴀᴍᴀ</button>
+   <button class="category-btn">Aᴄ̧ᴀ̃ᴏ</button>
+   <button class="category-btn">H᥆rr᥆r</button>
+   <button class="more-btn" onclick="toggleMoreGenres()">𝕄𝔸𝕀𝕊</button>
+   </header>
+      
+
+<!-- MINI TELA COM MAIA GENEROS CONTINUACAO DO MAIS-->
+   <header class="more-genres" id="more-Genres">
+   <button class="close-btn" onclick="toggleMoreGenres()">✖</button>
+   <header class="genres-container">
+   <button>Jᴏᴜsᴇɪ</button>
+   <button>Isᴇᴋᴀɪ</button> <button>+18</button>
+   <button>Sh᥆ᥙᥒᥱᥒ</button> <button>Sᴇɪɴᴇɴ</button>
+   <button>Mɪsᴛᴇʀɪᴏ</button> <button>Psɪᴄᴏʟᴏ́ɢɪᴄᴏ</button>
+   <button>Tʀᴀɢᴇ́ᴅɪᴀ</button> <button>Harem</button>
+   <button>Sʟɪᴄᴇ ᴏғ Lɪғᴇ</button> <button>Mᴀɢɪᴀ</button>
+   <button>Aᴠᴇɴᴛᴜʀᴀ</button>   <button>Fɪᴄᴄ̧ᴀ̃ᴏ</button>
+   <button>Yᴀᴏɪ</button>   <button>Cᴏʟᴇɢɪᴀʟ</button>
+   </header>
+   </header>
+  
+ 
+   
+<!--MENU HAMBURGUER-->
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li>♤𝑷𝑹𝑶𝑱𝑬𝑻𝑶𝑺♤</li>
+            <li>☆𝑺𝑶𝑩𝑹𝑬☆</li>
+            <li>♧𝑺𝑼𝑷𝑶𝑹𝑻𝑬♧</li>
+            <li>¤Login| Criar Conta¤</li>
+            <li>◇𝑫𝑶𝑬◇</li>
+        </ul>
+    </div>
+<!--FILTRAGEM DE GENEROS/ANOS/ALFABETO-->
+    <div class="filter-menu" id="filterMenu">
+        <label>Filtrar por ano:</label>
+        <select>
+            <option>2025</option>
+            <option>2024</option>
+            <option>2023</option>
+        </select>
+
+        <label>Filtrar por alfabeto:</label>
+        <select>
+            <option>A - Z</option>
+            <option>Z - A</option>
+        </select>
+    </div> 
+<!--SESSAO DE MANGAS--> 
+    <main class="manga-grid">
+        <div class="manga-card"></div>
+        <div class="manga-card"></div>
+        <div class="manga-card"></div>
+        <div class="manga-card"></div>
+        <div class="manga-card"></div>
+        <div class="manga-card"></div>
+    </main>
+
+    <script src="script.js"></script> <!-- Link para o JS -->
+</body>
+</html>
